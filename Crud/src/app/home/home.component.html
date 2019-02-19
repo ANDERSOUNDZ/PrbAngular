@@ -1,0 +1,14 @@
+<mat-card>
+        <p>
+                <button mat-stroked-button><mat-icon>add</mat-icon>Agregar Item</button>
+        </p>
+
+<mat-divider>
+
+</mat-divider>
+
+        <mat-list-item role="listitem" *ngFor="let numeroItems of itemPadre">
+                <!--<app-item-hijo [numeroItems,descripcionProducto]="numeroItems,descripcionProducto">-->
+                <app-item-hijo [numeroItems]="numeroItems" (outBorrar)="outBorrar($event)"></app-item-hijo>
+        </mat-list-item>
+</mat-card>
