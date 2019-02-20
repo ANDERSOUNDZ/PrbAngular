@@ -1,14 +1,19 @@
 <mat-card>
+        <h2>Método para agregar items</h2>    
         <p>
-                <button mat-stroked-button><mat-icon>add</mat-icon>Agregar Item</button>
+        <mat-form-field class="example-full-width">
+                <input matInput placeholder="Ingrese Item" [(ngModel)]="vr01" (keyup.enter)="addItem()">
+
+        </mat-form-field>
+        &nbsp;
+        <button mat-stroked-button (click)="addItem()"><mat-icon>add</mat-icon>Agregar Item</button>      
+                {{vr01}}
         </p>
 
-<mat-divider>
-
-</mat-divider>
+<mat-divider></mat-divider>
 
         <mat-list-item role="listitem" *ngFor="let numeroItems of itemPadre">
                 <!--<app-item-hijo [numeroItems,descripcionProducto]="numeroItems,descripcionProducto">-->
-                <app-item-hijo [numeroItems]="numeroItems" (outBorrar)="outBorrar($event)"></app-item-hijo>
+                <app-item-hijo [numeroItems]="numeroItems" (inBorrar)="outBorrar($event)"></app-item-hijo>
         </mat-list-item>
 </mat-card>

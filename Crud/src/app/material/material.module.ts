@@ -9,7 +9,9 @@ import {
   MatCardModule,
   MatBadgeModule,
   MatChipsModule,
-  MatIconModule
+  MatIconModule,
+  MatInputModule,
+  MatFormFieldModule
 }
 
 from '@angular/material';
@@ -26,7 +28,9 @@ from '@angular/material';
     MatCardModule,
     MatBadgeModule,
     MatChipsModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   exports:[
     MatButtonModule,
@@ -36,7 +40,9 @@ from '@angular/material';
     MatCardModule,
     MatBadgeModule,
     MatChipsModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule,
+    MatFormFieldModule
   ]
 })
 export class MaterialModule { }

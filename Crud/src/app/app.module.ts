@@ -9,6 +9,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from './material/material.module';
 import { HomeComponent } from './home/home.component';
 import { ItemHijoComponent } from './home/item-hijo/item-hijo.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { ItemHijoComponent } from './home/item-hijo/item-hijo.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
